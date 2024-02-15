@@ -206,7 +206,7 @@ void update()
             }
         }
     
-        // scaling the cat, which in turn will scale the witch since the witch is relative   to the cat
+        // scaling the cat, which in turn will scale the witch since the witch's translations are relative to the cat
         g_model_matrix_cat = glm::scale(g_model_matrix_cat, glm::vec3(scale_factor, scale_factor, 0.0f));
 
         // translate -> Rotate g_model_matrix_witch
